@@ -1,0 +1,18 @@
+.coupon-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3) var(--space-4);
+  font-weight: 600;
+  background: var(--color-surface-alt);
+  border-block-start: 2px solid var(--color-border);
+
+  &__label {
+    color: var(--color-text-muted);
+  }
+
+  &__amount {
+    font-variant-numeric: tabular-nums;
+    color: var(--color-primary);
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "extends": ["stylelint-config-standard-scss", "stylelint-config-css-modules"],
+  "plugins": ["stylelint-scss", "stylelint-selector-bem-pattern"],
+  "rules": {
+    "max-nesting-depth": 2,
+    "selector-max-id": 0,
+    "selector-max-compound-selectors": 4,
+    "declaration-no-important": true,
+    "scss/load-no-partial-leading-underscore": true,
+    "scss/at-use-no-unnamespaced": null,
+    "selector-class-pattern": null,
+    "plugin/selector-bem-pattern": {
+      "componentName": "[a-z]+(?:-[a-z]+)*",
+      "componentSelectors": {
+        "initial": "^\\.{componentName}(?:__[a-z]+(?:-[a-z]+)*)?(?:--[a-z]+(?:-[a-z]+)*)?$"
+      },
+      "utilitySelectors": "^\\.u-[a-z]+(?:-[a-z]+)*$"
+    }
+  },
+  "ignoreFiles": ["dist/**", "node_modules/**"],
+  "overrides": [
+    {
+      "files": ["src/styles/_reset.scss"],
+      "rules": {
+        "selector-max-id": null
+      }
+    }
+  ]
+}

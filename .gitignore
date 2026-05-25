@@ -1,0 +1,8 @@
+dist
+node_modules
+*.log
+.DS_Store
+.idea
+
+# duplicate at repo root — canonical copy lives in public/
+/nesine-data.json

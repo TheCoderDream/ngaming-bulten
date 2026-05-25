@@ -1,0 +1,68 @@
+.bulletin-row {
+  position: absolute;
+  inset-inline: 0;
+  display: grid;
+  min-width: max-content;
+  contain: layout paint;
+  background: var(--color-surface);
+
+  &__meta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--space-1);
+    padding-inline: var(--space-3);
+    border-inline-end: 1px solid var(--color-border);
+    border-block-end: 1px solid var(--color-border);
+    overflow: hidden;
+  }
+
+  &__league {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__match {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-2);
+    font-size: var(--font-size-sm);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__code {
+    font-weight: 600;
+  }
+
+  &__time {
+    color: var(--color-text-muted);
+  }
+
+  &__name {
+    font-weight: 500;
+  }
+
+  &__placeholder,
+  &__mbs,
+  &__empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: var(--row-height);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    border-inline-end: 1px solid var(--color-border);
+    border-block-end: 1px solid var(--color-border);
+    background: var(--color-surface);
+  }
+
+  &__mbs {
+    font-weight: 600;
+    color: var(--color-text);
+  }
+}

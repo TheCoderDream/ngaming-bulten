@@ -1,0 +1,12 @@
+.app {
+  display: grid;
+  grid-template-columns: 1fr var(--coupon-width);
+  height: 100%;
+  overflow: hidden;
+
+  &__main {
+    min-width: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+}
